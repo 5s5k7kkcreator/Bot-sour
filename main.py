@@ -1,7 +1,7 @@
 import telebot
 
 # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-TOKEN = '8551896844:AAGLOmgpoudx7_lwgRXS8UgaXjRsfnugj8U'
+TOKEN = '8551896844:AAGB3J3CM_Qy0_ylAF3EaO7JTbjRdJChv_k'
 bot = telebot.TeleBot(TOKEN)
 
 # Command handler for the '/start' command

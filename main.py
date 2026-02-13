@@ -12,7 +12,10 @@ def send_welcome(message):
 # Command handler for the '/help' command
 @bot.message_handler(commands=['help'])
 def send_help(message):
-    bot.reply_to(message, "Available commands: /start, /help")
+    bot.send_message(
+    message.chat.id,
+    "Welcome to the bot!\nUse /help to see available commands."
+    )
 
 # This is where you can add more commands and features
 

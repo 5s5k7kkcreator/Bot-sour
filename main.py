@@ -1,24 +1,24 @@
 import telebot
 
-# Replace 'YOUR_BOT_TOKEN' with your actual bot token
+# استبدل 'رمز_البوت_الخاص_بك' برمز البوت الفعلي الخاص بك
 TOKEN = '8551896844:AAGB3J3CM_Qy0_ylAF3EaO7JTbjRdJChv_k'
 bot = telebot.TeleBot(TOKEN)
 
-# Command handler for the '/start' command
+# معالج الأوامر لأمر '/start'
 @bot.message_handler(commands=['start'])
-def send_welcome(message):
-    bot.reply_to(message, "Welcome to the bot!\nUse /help to see available commands.")
+def ارسال_الترحيب(message):
+    bot.reply_to(message, "مرحباً بك في البوت!\nاستخدم /help لمشاهدة الأوامر المتاحة.")
 
-# Command handler for the '/help' command
+# معالج الأوامر لأمر '/help'
 @bot.message_handler(commands=['help'])
-def send_help(message):
+def ارسال_المساعدة(message):
     bot.send_message(
     message.chat.id,
-    "Welcome to the bot!\nUse /help to see available commands."
+    "مرحباً بك في البوت!\nاستخدم /help لمشاهدة الأوامر المتاحة."
     )
 
-# This is where you can add more commands and features
+# هنا يمكنك إضافة المزيد من الأوامر والميزات
 
-# Start polling
+# بدء التصويت
 if __name__ == '__main__':
     bot.polling()

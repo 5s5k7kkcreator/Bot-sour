@@ -1,7 +1,7 @@
 import telebot
 
 # استبدل 'رمز_البوت_الخاص_بك' برمز البوت الفعلي الخاص بك
-TOKEN = '8551896844:AAGB3J3CM_Qy0_ylAF3EaO7JTbjRdJChv_k'
+TOKEN = '8410949251:AAHW8GkHA724nfIh0v-64niN-VJKcWK1ZzM'
 bot = telebot.TeleBot(TOKEN)
 
 # معالج الأوامر لأمر '/start'
